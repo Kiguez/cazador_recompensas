@@ -2,13 +2,14 @@ package ar.edu.unahur.obj2.profugos;
 
 public class ArteMarcial extends EvolucionProfugo{
 
-    public ArteMarcial(Profugo unProfugo) {
+    public ArteMarcial(IProfugo unProfugo) {
         super(unProfugo);
-        this.duplicarHabilidad();
     }
 
-    public void duplicarHabilidad() {
-        unProfugo.habilidad = Math.min(100 , unProfugo.habilidad * 2);
+    @Override
+    public Integer getHabilidad() {
+        return
+            Math.min(100, super.getHabilidad()*2);
     }
     
     

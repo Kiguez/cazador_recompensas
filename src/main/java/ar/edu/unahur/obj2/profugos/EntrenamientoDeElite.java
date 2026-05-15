@@ -2,13 +2,15 @@ package ar.edu.unahur.obj2.profugos;
 
 public class EntrenamientoDeElite extends EvolucionProfugo{
 
-    public EntrenamientoDeElite(Profugo unProfugo) {
+    public EntrenamientoDeElite(IProfugo unProfugo) {
         super(unProfugo);
-        unProfugo.dejarDeEstarNervioso();
     }
 
     @Override
-    public void volverseNervioso() {}
+    public Boolean esNervioso() {
+        return
+            Boolean.FALSE;
+    }
 
     
     

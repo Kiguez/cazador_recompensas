@@ -2,9 +2,9 @@ package ar.edu.unahur.obj2.profugos;
 
 public abstract class EvolucionProfugo implements IProfugo {
 
-    protected Profugo unProfugo;
+    protected IProfugo unProfugo;
 
-    public EvolucionProfugo(Profugo unProfugo) {
+    public EvolucionProfugo(IProfugo unProfugo) {
         this.unProfugo = unProfugo;
     }
 
